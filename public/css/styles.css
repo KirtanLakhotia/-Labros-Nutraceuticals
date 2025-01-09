@@ -1,7 +1,11 @@
+
+
+
 body {
     font-family: 'Poppins', sans-serif !important; /* Replace with your chosen font */
-    overflow-x: hidden; /* Disable horizontal scrolling */
-
+    overflow-x: hidden !important; /* Disable horizontal scrolling */
+    margin: 0;
+    padding: 0;
   }
 
 .nav_bar{
@@ -35,7 +39,7 @@ body {
 } */
 
 .hero-content {
- 
+    
    
     text-align: left;
     margin-left: 2rem;
@@ -121,11 +125,7 @@ padding-bottom: 3rem;
   }
 
 
-  body {
-    margin: 0;
-    padding: 0;
 
-  }
   
   .diagonal-stripe {
     position: absolute;
@@ -171,6 +171,32 @@ padding-bottom: 3rem;
     }
 }
 
+@media (max-width: 768px) {
+  html{
+    overflow-x: hidden !important; /* Disable horizontal scrolling */
+
+  }
+  .col-md-12{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .diagonal-stripe {
+      top: 10%; /* Adjust for mobile */
+      left: -10%; /* Shift left to keep within the viewport */
+  }
+
+  .diagonal-stripe2 {
+      top: 17%; /* Adjust for mobile */
+      left: -22%; /* Shift left to keep within the viewport */
+  }
+
+  /* Optionally reduce size or hide stripes for smaller screens */
+  .diagonal-stripe,
+  .diagonal-stripe2 {
+      width: 100%; /* Reduce width for mobile */
+      height: 3rem; /* Adjust height if needed */
+  }
+}
 
 /* .how_it_works{
   text-align: center;
@@ -193,7 +219,8 @@ padding-bottom: 3rem;
  background-color: #FF681F;
 }
 */
-@media screen and (min-width: 769px) {
+@media(min-width: 769px) {
+
   .how_it_works h1 {
       font-size: 3vw; 
     }
