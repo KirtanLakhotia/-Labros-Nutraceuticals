@@ -1,0 +1,323 @@
+body {
+    font-family: 'Poppins', sans-serif !important; /* Replace with your chosen font */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+
+  }
+
+.nav_bar{
+    color: white;
+  background-color: white;
+}
+.logo_img{
+    height: 4rem;
+
+}
+
+.nav_bar_links{
+    padding-top: 1rem;
+ 
+
+}
+.nav-item a:hover{
+    color: #FF681F !important;
+    
+
+}
+.nav-link{
+    padding-right: 2rem !important;
+    font-weight: bold !important;
+}
+
+/* hero sefctoion */
+
+/* .row{
+    background-image: url("C:/Users/lenovo/Desktop/Labros Nutraceuticals/content/mushroom_doodle-removebg-preview.png") !important;
+} */
+
+.hero-content {
+ 
+   
+    text-align: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 3rem;
+}
+
+.hero-content p{
+    padding-top: 2rem;
+    font-size: large;
+    padding-bottom: 1rem;
+}
+
+.hero-content h1{
+ font-weight: bold;
+}
+
+
+.hero-video {
+padding-top: 3rem;
+position: relative;
+display: flex; /* Enable Flexbox */
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+max-width: 100%; /* Ensure it doesn't overflow */
+text-align: center;
+border-radius: 35px;
+overflow: hidden;
+padding-bottom: 3rem;
+}
+.hero-video video {
+  background-color: black;
+    width: 80%;
+  
+    border-radius: 35px;
+}
+
+
+
+.rounded-button {
+    background-color: #FF681F;
+    color: white;
+    border: none;
+    padding: 12px 27px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .rounded-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 0;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  .rounded-button:hover {
+    color: white;
+  }
+
+  .rounded-button:hover::after {
+    transform: scaleX(1);
+  }
+
+  .rounded-button span {
+    position: relative;
+    z-index: 1;
+  }
+
+  .rounded-button:active {
+    transform: scale(0.98);
+  }
+
+
+  body {
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .diagonal-stripe {
+    position: absolute;
+    top: 20%; /* Adjust starting position */
+    left: 30%; /* Adjust starting position */
+    width: 100%; /* Ensure it spans across the screen */
+    height: 4rem; /* Set the width of the stripe */
+    background-color: #FF681F; /* Initial stripe color (orange) */
+    transform: rotate(45deg); /* Rotate the stripe to 45 degrees */
+    z-index: -1; /* Ensure it's behind the content */
+    opacity: 0.8; /* Add some transparency */
+    animation: colorTransition 3s infinite alternate; /* Add animation */
+}
+
+.diagonal-stripe2 {
+    position: absolute;
+    top: 40%; /* Adjust starting position */
+    left: 20%; /* Adjust starting position */
+    width: 100%; /* Ensure it spans across the screen */
+    height: 4rem; /* Set the width of the stripe */
+    background-color: black; /* Initial stripe color */
+    transform: rotate(45deg); /* Rotate the stripe to 45 degrees */
+    z-index: -1; /* Ensure it's behind the content */
+    opacity: 0.8; /* Add some transparency */
+    animation: colorTransition2 3s infinite alternate; /* Add animation */
+}
+
+/* Keyframes for color transition */
+@keyframes colorTransition {
+    0% {
+        background-color: #FF681F; /* Start with orange */
+    }
+    100% {
+        background-color: black; /* Transition to black */
+    }
+}
+@keyframes colorTransition2 {
+    0% {
+        background-color: black; /* Start with orange */
+    }
+    100% {
+        background-color: #FF681F; /* Transition to black */
+    }
+}
+
+
+/* .how_it_works{
+  text-align: center;
+ 
+}
+.how_it_works h1{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  background-color: white;
+}
+.image_div_how_it_works{
+  padding: 0rem;
+}
+.image_div_how_it_works img{
+ width: 80%;
+}
+
+.text_div_how_it_works h3{
+  margin-top: 2rem;
+ background-color: #FF681F;
+}
+*/
+@media screen and (min-width: 769px) {
+  .how_it_works h1 {
+      font-size: 3vw; 
+    }
+    
+    .text_div_how_it_works h3, .col-lg-4 h3 {
+      font-size: 1.5vw;
+    }
+    
+    .text_div_how_it_works p, .col-lg-4 p {
+      font-size: 1.3vw; 
+    }
+    
+
+    .image_div_how_it_works img {
+      width: 100%;
+      height: auto;
+    }
+} 
+
+  /* Main Container */
+.how_it_works {
+
+  text-align: center;
+  color: #222;
+
+  overflow: hidden;
+}
+
+.how_it_works h1 {
+  background-color: white;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+
+}
+
+/* Image */
+.image_div_how_it_works {
+  position: relative;
+  z-index: 1; /* Ensures image is above the text initially */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.image_div_how_it_works img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+/* Text Blocks */
+.text_div_how_it_works {
+ padding: 1rem;
+ margin: 1rem;
+  background: #FF681F; /* Semi-transparent background */
+  border-radius: 12px;
+
+}
+
+/* interactive container css */
+
+
+
+
+
+.story-container {
+  z-index: -1;
+  position: relative;
+}
+
+/* Style for each section with 45-degree division */
+#section1, #section2, #section3, #section4, #section5 {
+
+  padding: 50px;
+  margin: 50px 0;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  background: linear-gradient(135deg, #FF681F 50%, transparent 50%), 
+              url('C:/Users/lenovo/Desktop/Labros Nutraceuticals/content/mushroom_doodle-removebg-preview.png') no-repeat center center / cover;
+}
+
+/* Adding a semi-transparent overlay to ensure readability */
+#section1:before, #section2:before, #section3:before, #section4:before, #section5:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  z-index: 0; /* Place overlay below text */
+}
+
+/* Text inside sections */
+#section1 h2, #section2 h2, #section3 h2, #section4 h2, #section5 h2 {
+  position: relative;
+  z-index: 1; /* Bring text above the overlay */
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+#section1 p, #section2 p, #section3 p, #section4 p, #section5 p {
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+  width: 48%;
+  font-weight: bold;
+}
+
+/* Add a smooth scroll animation for sections */
+.story {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.story.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add a shadow to sections to enhance focus */
+#section1, #section2, #section3, #section4, #section5 {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
