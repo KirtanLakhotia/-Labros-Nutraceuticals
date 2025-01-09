@@ -275,7 +275,7 @@ padding-bottom: 3rem;
   position: relative;
   transition: transform 0.6s ease-out, opacity 0.6s ease-out;
   background: linear-gradient(135deg, #FF681F 50%, transparent 50%), 
-              url('C:/Users/lenovo/Desktop/Labros Nutraceuticals/content/mushroom_doodle-removebg-preview.png') no-repeat center center / cover;
+              url('mushroom_doodle-removebg-preview.png') no-repeat center center / cover;
 }
 
 /* Adding a semi-transparent overlay to ensure readability */
