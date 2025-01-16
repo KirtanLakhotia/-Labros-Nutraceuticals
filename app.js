@@ -135,7 +135,7 @@ app.get("/",(req,res)=>{
     res.render('index') ;
 })
 
-app.listen(process.env.port || 3000,function(){
+app.listen(process.env.port || 8080,function(){
     console.log("server is runninh at port 3000") ;
 })
 
