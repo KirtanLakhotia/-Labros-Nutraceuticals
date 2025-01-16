@@ -13,7 +13,8 @@ body {
   background-color: white;
 }
 .logo_img{
-    height: 4rem;
+    height: 6rem;
+    width: auto;
 
 }
 
@@ -73,8 +74,7 @@ padding-bottom: 3rem;
 .hero-video video {
   background-color: black;
     width: 80%;
-  
-    border-radius: 35px;
+    border-radius: 50px;
 }
 
 
@@ -91,6 +91,8 @@ padding-bottom: 3rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 
   .rounded-button::after {
@@ -196,6 +198,8 @@ padding-bottom: 3rem;
       width: 100%; /* Reduce width for mobile */
       height: 3rem; /* Adjust height if needed */
   }
+
+
 }
 
 /* .how_it_works{
@@ -238,6 +242,7 @@ padding-bottom: 3rem;
       width: 100%;
       height: auto;
     }
+    
 } 
 
   /* Main Container */
@@ -295,16 +300,35 @@ padding-bottom: 3rem;
 
 /* Style for each section with 45-degree division */
 #section1, #section2, #section3, #section4, #section5 {
-
+  
   padding: 50px;
   margin: 50px 0;
   border-radius: 10px;
   position: relative;
   transition: transform 0.6s ease-out, opacity 0.6s ease-out;
-  background: linear-gradient(135deg, #FF681F 50%, transparent 50%), 
-              url('mushroom_doodle-removebg-preview.png') no-repeat center center / cover;
+
 }
 
+#section1{
+  background: linear-gradient(20deg, #FF681F 40%, transparent 80%), 
+  url('mushroom_doodle-removebg-preview.png') no-repeat right  ;
+}
+#section2{
+  background: linear-gradient(50deg, #FF681F 40%, transparent 80%), 
+  url('mushroom_doodle-removebg-preview.png') no-repeat right  ;
+}
+#section3{
+  background: linear-gradient(80deg, #FF681F 40%, transparent 80%), 
+  url('mushroom_doodle-removebg-preview.png') no-repeat right  ;
+}
+#section4{
+  background: linear-gradient(110deg, #FF681F 40%, transparent 80%), 
+  url('mushroom_doodle-removebg-preview.png') no-repeat right  ;
+}
+#section5{
+  background: linear-gradient(140deg, #FF681F 40%, transparent 80%), 
+  url('mushroom_doodle-removebg-preview.png') no-repeat right  ;
+}
 /* Adding a semi-transparent overlay to ensure readability */
 #section1:before, #section2:before, #section3:before, #section4:before, #section5:before {
   content: '';
@@ -321,15 +345,14 @@ padding-bottom: 3rem;
 #section1 h2, #section2 h2, #section3 h2, #section4 h2, #section5 h2 {
   position: relative;
   z-index: 1; /* Bring text above the overlay */
-  font-size: 2rem;
   font-weight: bolder;
 }
 
 #section1 p, #section2 p, #section3 p, #section4 p, #section5 p {
   position: relative;
   z-index: 1;
-  font-size: 1rem;
-  width: 48%;
+
+  width: 60%;
   font-weight: bold;
 }
 
@@ -337,9 +360,12 @@ padding-bottom: 3rem;
 .story {
   opacity: 0;
   transform: translateY(50px);
+  padding: 2rem !important;
+  margin: 1rem !important;
 }
 
 .story.show {
+  padding: 2.2rem !important;
   opacity: 1;
   transform: translateY(0);
 }
@@ -347,4 +373,210 @@ padding-bottom: 3rem;
 /* Add a shadow to sections to enhance focus */
 #section1, #section2, #section3, #section4, #section5 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+
+
+/* end container */
+.end-container{
+  margin-top: 5rem;
+  background-color:#F3F8FF;
+  text-align: center;
+}
+.grow{
+  text-decoration: none;
+  color: black;
+  margin: 0 2rem 0 1rem;
+  padding-top: 1rem;
+  font-size: 10rem;
+  size: 3rem;
+}
+.grow:hover{
+  color:grey;
+}
+.footer_rights{
+  margin-bottom: 0rem;
+  padding-right: 0rem;
+}
+
+
+/* whatsapp container */
+
+
+
+@media(max-width:768px){
+  .whatsapp-float {
+    
+    padding: 10px; /* Smaller padding on mobile */
+    font-size: 3.5rem !important; /* Decrease font size for mobile */
+    position: fixed;
+    bottom: 0.9rem !important; /* Distance from the bottom */
+    right: 1rem !important;  /* Distance from the right */
+    z-index: 1000; /* Ensures it stays above other content */
+    color: #25d366; /* WhatsApp green color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 50%; /* Makes it circular */
+    background: white; /* Background color for better visibility */
+    padding: 20px;
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+    background: none;
+  }
+
+  
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+.whatsapp-float {
+  position: fixed;
+
+  bottom: 3rem ; /* Distance from the bottom */
+  right: 1.5rem;  /* Distance from the right */
+  z-index: 1000; /* Ensures it stays above other content */
+  color: #25d366; /* WhatsApp green color */
+  text-decoration: none; /* Removes underline */
+  border-radius: 50%; /* Makes it circular */
+  background: white; /* Background color for better visibility */
+  padding: 20px;
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+  background: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+
+
+/* contact-container */
+.text{
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  align-items: center;
+  }
+  .form_contact{
+  text-align: center;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  
+  }
+  .contact_text{
+    text-align: center;
+    padding-bottom: 1.5rem;
+    /* font-size: 1.2rem; */
+  }
+  
+  
+  .contact_detail img{
+    width: 30rem;
+    
+  }
+  .contact_detail{
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  padding-right: 40rem;
+  /* margin-left: 10rem;
+  margin-top: 1rem;
+  margin-right:3rem ; */ 
+  margin:0rem 4rem auto 10rem ;
+  }
+
+  .contact_list_item{
+  padding-top: 0.8rem;
+  font-size:1.2rem ;
+  }
+  .submit_btn{
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  
+  }
+  .contact_form{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .asterisk_required{
+    text-align: left;
+    padding-top: 2rem;
+  }
+  /* other details container */
+  .address_details{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .address_details_heading{
+    margin-bottom: 3rem;
+  }
+  .addredd_detail_items{
+    margin-bottom: 2rem;
+  }
+  
+  @media(max-width:768px){
+    .container{
+      text-align: center !important;
+      align-items: center;
+    }
+    .contact_form{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .contact_detail {
+       margin: 0rem;
+      padding: 0rem;
+     }
+    .contact_detail img{
+      width: 15rem;
+     padding-bottom: 0%;
+    }
+    .text{
+        align-items: center;
+        text-align: center;
+      background-color: #f4f4f4; 
+      padding-bottom: 0rem;
+    }
+    .submit_btn{
+      margin-top: 0.5rem;
+      margin-bottom: 10rem;
+      
+      }
+  .address_details{
+    margin-bottom: 3rem;
+  }
+  .address_details_heading{
+    margin-bottom: 0rem;
+  }
+  .addredd_detail_items{
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .addredd_detail_items_text{
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+  }
+  }
+
+
+
+/* contact us success page code */
+
+.contact_success{
+  text-align: center;
+  padding-top: 4rem;
+}
+.contact_success h4{
+padding: 0.8rem;
 }

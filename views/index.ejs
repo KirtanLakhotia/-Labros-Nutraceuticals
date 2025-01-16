@@ -1,0 +1,123 @@
+<%- include('header') %>
+<!-- diagonal strip -->
+<div class="diagonal-stripe"></div>
+<div class="diagonal-stripe2"></div>
+      <!-- nav end -->
+       <!-- hero section -->
+       <div class="row">
+        
+        <div class="col-md-12 col-lg-5 order-1 order-lg-2">
+          <div class="hero-video">
+            <video id="heroVideo" autoplay muted loop>
+                <source src="content/labros_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        </div>
+
+        <div class="col-md-12 col-lg-7 order-2 order-lg-1">
+          <div class="hero-content">
+            <h1>Bringing Health Closer.<br>Quality is our priority</h1>
+            <p>
+              We at Labros Nutraceuticals are committed to enhancing health and well-being through nature's best remedies. With a focus on purity and quality, we cultivate and process Cordyceps militaris using advanced techniques to preserve its potent bioactive compounds. From boosting energy and immunity to supporting longevity and vitality, our products are designed to seamlessly integrate into your wellness routine and enrich your life.
+            </p>
+              <div class="register-buttons">
+                <button class="rounded-button"><span>Order</span></button>
+                <button class="rounded-button"><span>Learn More</span></button>
+            </div>
+        </div>
+        </div>
+
+       </div>
+<!-- herosectoion end -->
+       <!-- how it works section -->
+<div class="how_it_works">
+  <h1>How It works</h1>
+  <div class="row">
+    <div class="col-lg-4 col-md-12 ">
+      <div class="text_div_how_it_works">
+        <h3>Energy and Stamina</h3>
+        <p>Enhances ATP production, improving energy levels.
+          Commonly used to boost athletic performance and combat fatigue.
+          </p>
+          <h3>Lung and Respiratory Health </h3>
+          <p>Traditionally used for respiratory disorders, including asthma and chronic bronchitis.
+            </p>
+  
+        <h3>Anti-Inflammatory Effects</h3>
+        <p>Reduces inflammation in conditions like arthritis and chronic inflammatory</p>
+      </div>
+
+    </div>
+    <div class="col-lg-4 col-md-12 image_div_how_it_works">
+      <img src="content/howItWorks.jpg" alt="">
+    </div>
+    <div class="col-lg-4 col-md-12 ">
+      <div class="text_div_how_it_works">
+        <h3>Immune System Support</h3>
+        <p>Modulates immune responses, enhancing resistance to infections.
+          Supports overall immune health through polysaccharides.
+          </p>
+              <h3>Antioxidant Properties</h3>
+        <p>Protects cells from oxidative damage, reducing the risk of chronic diseases.
+          </p>
+  
+        <h3>Liver Protection</h3>
+        <p>May protect the liver from damage due to toxins or diseases like hepatitis.</p>
+      </div>
+
+    </div>
+  </div>
+  
+</div>
+
+
+<!-- interactive contailer -->
+
+<div class="story-container">
+  <section class="story" id="section1">
+    <h2>Cordyceps Enters the Body</h2>
+    <p>The Cordyceps mushroom starts its journey in the digestive system...</p>
+  </section>
+
+  <section class="story" id="section2">
+    <h2>Immune System Boost</h2>
+    <p>Cordyceps stimulates the immune system, enhancing the activity of NK cells...</p>
+  </section>
+
+  <section class="story" id="section3">
+    <h2>Energy and ATP Production</h2>
+    <p>The body experiences increased ATP production in cells, boosting energy levels...</p>
+  </section>
+
+  <section class="story" id="section4">
+    <h2>Anti-Aging and Cellular Protection</h2>
+    <p>Cordyceps neutralizes free radicals, reducing oxidative stress...</p>
+  </section>
+
+  <section class="story" id="section5">
+    <h2>Brain Health and Cognitive Function</h2>
+    <p>The compound cordycepin helps protect neurons from damage, supporting brain health...</p>
+  </section>
+</div>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const stories = document.querySelectorAll('.story');
+    const triggerPoint = window.innerHeight / 1.2;
+
+    stories.forEach(function(story) {
+      const storyPosition = story.getBoundingClientRect().top;
+
+      if (storyPosition < triggerPoint) {
+        story.classList.add('show');
+      } else {
+        story.classList.remove('show');
+      }
+    });
+  });
+</script>
+
+
+      <%- include('footer') %>
+
