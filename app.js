@@ -131,6 +131,25 @@ app.get("/100cr", async function(req,res){
 
 }) ;
 
+
+app.get("/section1_data",(req,res)=>{
+  res.render("section1_data") ;
+}) ;
+app.get("/section2_data",(req,res)=>{
+  res.render("section2_data") ;
+}) ;
+app.get("/section3_data",(req,res)=>{
+  res.render("section3_data") ;
+}) ;
+app.get("/section4_data",(req,res)=>{
+  res.render("section4_data") ;
+}) ;
+app.get("/section5_data",(req,res)=>{
+  res.render("section5_data") ;
+}) ;
+
+
+
 app.get("/",(req,res)=>{
     res.render('index') ;
 })

@@ -270,12 +270,16 @@ padding-bottom: 3rem;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;  
 }
 
 .image_div_how_it_works img {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   border-radius: 12px;
+
+  
 }
 
 /* Text Blocks */
@@ -294,10 +298,10 @@ padding-bottom: 3rem;
 
 
 .story-container {
-  z-index: -1;
+
   position: relative;
 }
-
+  
 /* Style for each section with 45-degree division */
 #section1, #section2, #section3, #section4, #section5 {
   
@@ -332,13 +336,11 @@ padding-bottom: 3rem;
 /* Adding a semi-transparent overlay to ensure readability */
 #section1:before, #section2:before, #section3:before, #section4:before, #section5:before {
   content: '';
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   border-radius: 20px;
-  z-index: 0; /* Place overlay below text */
 }
 
 /* Text inside sections */
@@ -374,6 +376,92 @@ padding-bottom: 3rem;
 #section1, #section2, #section3, #section4, #section5 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
+
+.section_data_link{
+text-decoration: none;
+color: inherit;
+}
+
+
+
+
+
+
+
+.cordyceps-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-top: 8px solid #FF681F;
+}
+
+.cordyceps-title {
+  text-align: center;
+  color: #FF681F;
+  font-size: 24px;
+}
+
+.cordyceps-heading {
+  color: #FF681F;
+  font-size: 20px;
+}
+
+.cordyceps-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cordyceps-list {
+  padding-left: 20px;
+}
+
+.cordyceps-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-left: 5px solid #FF681F;
+  background: #fff5f0;
+  border-radius: 5px;
+}
+
+.cordyceps-citation {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cordyceps-note {
+  font-size: 14px;
+  color: #FF681F;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.section_image_div{
+  text-align: center;
+}
+
+.section_image{
+  width: 50%;
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+@media(max-width: 769px) {
+
+  .section_image{
+    width: 90%;
+  }
+}
+
+
+
 
 
 
@@ -580,3 +668,4 @@ padding-bottom: 3rem;
 .contact_success h4{
 padding: 0.8rem;
 }
+
